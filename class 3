@@ -1,0 +1,97 @@
+import matplotlib
+
+import malplotlib.pyplot as plt
+
+import matplotlib.pyplot as plt
+import numpy as np
+
+xpoints=np.array([0,6])
+ypoints=np.array([0,250])
+
+plt.plot(xpoints,ypoints)
+plt.show()
+
+import matplotlib.pyplot as plt
+import numpy as np
+
+xpoints=np.array([0,6])
+ypoints=np.array([0,250])
+
+plt.plot(xpoints,ypoints, 'o')
+plt.show()
+
+import matplotlib.pyplot as plt
+import numpy as np
+
+xpoints=np.array([1,2,6,8])
+ypoints=np.array([3,8,1,10])
+
+plt.plot(xpoints,ypoints)
+plt.show()
+
+import matplotlib.pyplot as plt
+import numpy as np
+ypoints=np.array([3,8,1,10])
+
+plt.plot(ypoints, marker='o')
+plt.show()
+
+import matplotlib.pyplot as plt
+import numpy as np
+ypoints=np.array([3,8,1,10])
+
+plt.plot(ypoints, marker='o', ms=20)
+plt.show()
+
+import matplotlib.pyplot as plt
+import numpy as np
+ypoints=np.array([3,8,1,10])
+
+plt.plot(ypoints, marker='o', ms=20, mec='r')
+plt.show()
+
+import matplotlib.pyplot as plt
+import numpy as np
+ypoints=np.array([3,8,1,10])
+plt.plot(ypoints,linestyle='dotted')
+plt.show()
+
+plt.plot(ypoints, linestyle='dashed')
+
+import matplotlib.pyplot as plt
+improt numpy as np
+
+ypoints=np.array([3,8,1,10])
+
+plt.plot(ypoints,color='r')
+plt.show()
+
+import matplotlib.pyplot as plt
+improt numpy as np
+
+ypoints=np.array([3,8,1,10])
+
+plt.plot(ypoints, linewidth='20.5')
+plt.show()
+
+import numpy as np
+import matplotlib.pyplot as plt
+
+x=np.array([80,78,78,7,8,7,8])
+y=np.array([2,4,5,5,6,6])
+
+plt.plot(x,y)
+ plt.xlabel("Average pulse")
+plt.ylabel("calories burnage")
+plt.title("sports watch data")
+
+plt.show()
+
+
+
+
+
+
+
+
+
