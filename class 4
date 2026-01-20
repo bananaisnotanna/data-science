@@ -1,0 +1,45 @@
+# Pandas for managing datasets
+import pandas as pd
+
+# Matplotlib for additional customization
+from matplotlib import pyplot as plt
+
+# Seaborn for plotting and styling
+import seaborn as sb
+
+load_dataset()
+
+import pandas as pd
+import seaborn as sb
+from matplotlib import pyplot as plt
+df = sb.load_dataset('iris')
+sb.displot(df['petal_length'], kde = False)
+plt.show()
+
+import pandas as pd
+import seaborn as sb
+from matplotlib import pyplot as plt
+df = sb.load_dataset('iris')
+sb.distplot(df['petal_length'])
+plt.show()
+
+import pandas as pd
+import seaborn as sb
+from matplotlib import pyplot as plt
+df = sb.load_dataset('iris')
+sb.jointplot(x = 'petal_length', y = 'petal_width', data = df)
+plt.show()
+
+import pandas as pd
+import seaborn as sb
+from matplotlib import pyplot as plt
+df = sb.load_dataset('iris')
+sb.set_style("ticks")
+sb.pairplot(df, hue = 'species', diag_kind = "kde", kind = "scatter", palette = "husl")
+plt.show()
+
+import numpy as np; np.random.seed(0)
+import seaborn as sns; sns.set_theme()
+uniform_data = np.random.rand(10, 12)
+ax = sns.heatmap(uniform_data)
+
